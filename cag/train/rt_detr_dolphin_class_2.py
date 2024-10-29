@@ -7,7 +7,7 @@ model = RTDETR("rtdetr-l.pt")
 model.info()
 
 # Train the model on the COCO8 example dataset for 100 epochs
-results = model.train(data="cag/cfg/datasets/dolphin_class_1.yaml", epochs=100, imgsz=1024)
+results = model.train(data="cag/cfg/datasets/dolphin_class_2.yaml", epochs=300, imgsz=640)
 
 # # Run inference with the RT-DETR-l model on the 'bus.jpg' image
 # results = model("path/to/bus.jpg")

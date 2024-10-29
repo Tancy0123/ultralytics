@@ -6,4 +6,4 @@ from ultralytics import YOLO
 model = YOLO("yolo11n.yaml").load("yolo11n.pt")  # build from YAML and transfer weights
 
 # Train the model
-results = model.train(data="cfg/datasets/dolphine_class_1.yaml", epochs=100, imgsz=1024)
+results = model.train(data="cag/cfg/datasets/dolphin_class_2.yaml", epochs=300, imgsz=640, device=1)
