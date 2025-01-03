@@ -6,4 +6,4 @@ from ultralytics import YOLO
 model = YOLO("yolo11m.yaml").load("yolo11m.pt")  # build from YAML and transfer weights
 
 # Train the model
-results = model.train(data="cag/cfg/datasets/dolphin_class_1.yaml", epochs=300, imgsz=1024)
+results = model.train(data="cag/cfg/datasets/sar_aircraft.yaml", epochs=300, imgsz=1500, batch=8)
